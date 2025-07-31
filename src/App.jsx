@@ -5,7 +5,6 @@ import Register from "./pages/Register";
 import Navbar from "./components/Navbar";
 import PrivateRoute from "./utils/PrivateRoute";
 import MovieAdd from "./pages/MovieAdd";
-import NoteDescription from "./pages/NoteDescription";
 import UpdateMovie from "./pages/UpdateMovie";
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
               </PrivateRoute>
             }
           />
-          <Route path="/description/:noteId" element={<NoteDescription />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route
